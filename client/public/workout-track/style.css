@@ -33,7 +33,7 @@ a:visited {
   color: inherit;
 }
 
-nav a:hover {
+nav a:hover{
   opacity: 0.7;
 }
 
@@ -160,21 +160,6 @@ button {
   border: 1px solid #aaa;
   padding: 10px;
   background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
-}
-
-.ui.blue.button,
-.ui.blue.buttons .button {
-  background-color: orange;
-  color: #fff;
-  text-shadow: none;
-  background-image: none;
-}
-.ui.positive.button,
-.ui.positive.buttons .button {
-  background-color: darkgrey;
-  color: #fff;
-  text-shadow: none;
-  background-image: none;
 }
 
 #toast {
