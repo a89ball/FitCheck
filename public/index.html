@@ -1,148 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete Responsive Fitness Website Design Tutorial</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-     <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="./css/style.css">
-
-</head>
-<body>
-    
-<!-- header section starts  -->
-
-<header>
-
-<a href="#" class="logo"><span>BE</span>FIT</a>
-
-<div id="menu" class="fas fa-bars"></div>
-
-<nav class="navbar">
-    <ul>
-        <li><a class="active" href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#team">team</a></li>
-        <li><a href="./workout-track/index.html">workout</a></li>
-        <li><a href="./login&signup/index.html">login/signup</a></li>
-    </ul>
-</nav>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-<h1>it's never too easy but <br> you have to try</h1>
-
-<a href="./workout-track/index.html"><button class="btn">get started</button></a>
-
-</section>
-
-<!-- home section ends -->
-
-<!-- about section start  -->
-
-<section class="about" id="about">
-
-<div class="row">
-
-    <div class="image">
-        <img src="images/about.jpg" alt="">
-    </div>
-
-    <div class="content">
-        <h3>a word about us</h3>
-        <p>Staying in shape is hard and that’s why our team at Fit Check has created a list of the best web application to track your fitness</p>
-        <p>Use these resources to keep track of your fitness and get motivated.</p>
-        <a href="#team"><button class="btn">learn more</button></a>
-    </div>
-
-</div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- team section starts -->
-
-<section id="team">
-    <div class="container">
-        <div class="card">
-          <img src="./images/profile3.jpg" alt="Person" class="card__image">
-          <p class="card__name">Mahmoud Cali</p>
-          <p class="card__name">Front-End Developer</p>
-          <div class="grid-container">
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+      </head>
       
-      
+      <body>
+        <section id="banner">
+          <img src="./images/BeFit-logo.png" id="logo">
+          <div class="banner-text">
+            <h1></h1>
+            <p>Take care of your body and it will take care of you.</p>
+            <div class="banner-btn">
+              <a href="#about"><span></span>Find Out </a>
+              <a href="about"><span></span>Read More</a>
+            </div>
           </div>
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
+        </section>
+        <div id="sideNav">
+          <nav>
+            <ul>
+              <li><a href="#banner">HOME</a></li>
+              <li><a href="./workout-track/index.html">Workout Tracker</a></li>
+              <li><a href="#about">About us</a>
+              <li><a href="#team">Team</a></li>
+              <li><a href="./login&signup/index.html">Login|SignUp</a></li>
+            </ul>
+          </nav>
+        </div>
+      
+        <div id="menuBtn">
+          <img src="https://i.postimg.cc/L5vc8FW6/menu.png" id="menu">
+        </div> <br> <br> <br>
+      
+        <!-- Features -->
+        <section id="about">
+          <div class="title-text">
+            <p>About us</p>
+            <h1>Learn more about us!</h1>
+          </div>
+          <div class="features-box">
+            <div class="features">
+              <h1>What is Simple Workout Log?</h1>
+              <div class="features-desc">
+                <div class="feature-icon">
+                  <i class="fa fa-shield"></i>
+                </div>
+                <div class="feature-text">
+                  <p>Simple Workout Log is designed to replace your paper workout journal.
+                  </p>
+                </div>
+              </div>
+              <h1>Why people love BeFit?</h1>
+              <div class="features-desc">
+                <div class="feature-icon">
+                  <i class="fa fa-check-square-o"></i>
+                </div>
+                <div class="feature-text">
+                  <p>We've been able to put together a great combination of simplicity, usability, and features. Because of this, BeFit Log has become one of the most popular workout tracking web apps in the internet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="features-img">
+              <img src="./images/coach1.png">
+            </div>
+          </div>
+        </section><br> <br> <br>
+      
+        <!-- team -->
+        <section id="team">
+          <div class="title-text">
+            <p>The Team</p>
+            <h1>Meat the team!</h1>
+          </div>
+          <div class="testimonial-row">
+            <div class="testimonial-col">
+              <div class="user">
+                <img src="./images/profile3.jpg">
+                <div class="user-info">
+                  <h4>Mahmoud Cali <i class="fa fa-linkedin"></i></h4>
+                  <small>Front-End Developer</small>
+                </div>
+              </div>
+              <p></p>
+            </div>
+            <div class="testimonial-col">
+              <div class="user">
+                <img src="https://i.postimg.cc/G3QwQvpw/img-2.jpg">
+                <div class="user-info">
+                  <h4>Rahma Abdul<i class="fa fa-linkedin"></i></h4>
+                  <small>Full-Stack Developer</small>
+                </div>
+              </div>
+              <p></p>
+            </div>
+            <div class="testimonial-col">
+              <div class="user">
+                <img src="./images/abdi-profile.jpg">
+                <div class="user-info">
+                  <h4>Abdifatah Hassan<i class="fa fa-linkedin"></i></h4>
+                  <small>Back-End Developer</small>
+                </div>
+              </div>
+              <p></p>
+            </div>
+          </div>
+      
+        </section>
+      
+        <!-- footer -->
+        <section id="footer">
           
-      
-        </div>
-        <div class="card">
-          <img src="https://lh3.googleusercontent.com/oUUiPB9sq3ACq4bUaRmo8pgvC4FUpRRrQKcGIBSOsafawZfRpF1vruFeYt6uCfL6wGDQyvOi6Ez9Bpf1Fb7APKjIyVsft7FLGR6QqdRFTiceNQBm1In9aZyrXp33cZi9pUNqjHASdA=s170-no" alt="Person" class="card__image">
-          <p class="card__name">Rahma Abdul</p>
-          <p class="card__name">Full-Stack Developer</p>
-          <div class="grid-container">
-      
+          <div class="social-links">
             
-      
+            <p>Copyright BeFit Group</p>
           </div>
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="./images/abdi-profile.jpg" alt="Person" class="card__image">
-          <p class="card__name">Abdifatah Hassan</p>
-          <p class="card__name">Back-End Developer</p>
-          <div class="grid-container">
-      
-            
-      
-          </div>
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-github"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      
-</section>
-
-<!-- team section ends  -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-    created by <a href="#">Fit Check Group</a> | all rights reserved.
-</section>
-
-<!-- footer section ends -->
-
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="js/main.js"></script>
-
-
-</body>
+        </section>
+      <script src="./js/script.js"></script>
+      </body>
 </html>
