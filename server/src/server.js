@@ -35,8 +35,8 @@ app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // map routers
-app.use('/dashboard', require('./routes/dashboard'));
-app.use('/', require('./routes/html'));
+//app.use('/dashboard', require('./routes/dashboard'));
+//app.use('/', require('./routes/html'));
 
 // connect server
 app.listen(PORT, function () {
