@@ -10,20 +10,35 @@
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Responsive Login Form Sign In Sign Up</title>
+        <title>BeFit Registrations</title>
     </head>
     <body>
-
+        <div id="sideNav">
+            <nav>
+              <ul>
+                <li><a href="/public/index.html">HOME</a></li>
+                <li><a href="/public/workout-track/index.html">Workout Tracker</a></li>
+                <li><a href="/public/index.html#about">About us</a>
+                <li><a href="/public/index.html#team">Team</a></li>
+                <li><a href="#login">Login|SignUp</a></li>
+              </ul>
+            </nav>
+          </div>
         
-        <div class="login">
-            <div class="login__content">
-                <div class="login__img">
-                    <img src="./images/coach1.png" alt="">
-                </div>
+          <div id="menuBtn">
+            <img src="https://i.postimg.cc/L5vc8FW6/menu.png" id="menu">
+          </div> <br> <br> <br>
+          <img src="/public/images/BeFit-logo.png" id="logo">
 
-                <div class="login__forms">
+        <div class="login">
+            <div class="login__content">    
+                <div class="login__img">
+                    <img src="./images/login-cover.jpeg" alt="">
+                </div>
+                <div class="login__forms" id="login">
                     <form action="" class="login__registre" id="login-in">
-                        <h1 class="login__title">Sign In</h1>
+                        <H1>BeFit registration</H1>
+                        <h4 class="login__title">Sign In</h4>
     
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
@@ -46,7 +61,8 @@
                     </form>
 
                     <form action="" class="login__create none" id="login-up">
-                        <h1 class="login__title">Create Account</h1>
+                        <H2>BeFit registration</H2>
+                        <h4 class="login__title">Create Account</h4>
     
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
@@ -81,6 +97,7 @@
         </div>
 
         <!--===== MAIN JS =====-->
-        <script src="./script.js"></script>
+        <script src="./login&signup.js"></script>
+        <script src="/public/js/script.js"></script>
     </body>
 </html>
