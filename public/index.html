@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./css/style.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,7 +19,7 @@
             <p>Take care of your body and it will take care of you.</p>
             <div class="banner-btn">
               <a href="#about"><span></span>Find Out </a>
-              <a href="about"><span></span>Read More</a>
+              <a href="#team"><span></span>Meet the team</a>
             </div>
           </div>
         </section>
@@ -36,7 +39,7 @@
           <img src="https://i.postimg.cc/L5vc8FW6/menu.png" id="menu">
         </div> <br> <br> <br>
       
-        <!-- Features -->
+        <!-- About -->
         <section id="about">
           <div class="title-text">
             <p>About us</p>
@@ -72,45 +75,141 @@
         </section><br> <br> <br>
       
         <!-- team -->
-        <section id="team">
-          <div class="title-text">
-            <p>The Team</p>
-            <h1>Meat the team!</h1>
-          </div>
-          <div class="testimonial-row">
-            <div class="testimonial-col">
-              <div class="user">
-                <img src="./images/profile3.jpg">
-                <div class="user-info">
-                  <h4>Mahmoud Cali <i class="fa fa-linkedin"></i></h4>
-                  <small>Front-End Developer</small>
-                </div>
-              </div>
-              <p></p>
-            </div>
-            <div class="testimonial-col">
-              <div class="user">
-                <img src="https://i.postimg.cc/G3QwQvpw/img-2.jpg">
-                <div class="user-info">
-                  <h4>Rahma Abdul<i class="fa fa-linkedin"></i></h4>
-                  <small>Full-Stack Developer</small>
-                </div>
-              </div>
-              <p></p>
-            </div>
-            <div class="testimonial-col">
-              <div class="user">
-                <img src="./images/abdi-profile.jpg">
-                <div class="user-info">
-                  <h4>Abdifatah Hassan<i class="fa fa-linkedin"></i></h4>
-                  <small>Back-End Developer</small>
-                </div>
-              </div>
-              <p></p>
-            </div>
-          </div>
+        <section id="team" class="pb-5">
+          <div class="container">
+              <h5 class="section-title h1">OUR TEAM</h5>
+              <div class="row">
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="./images/profile3.jpg" alt="card image"></p>
+                                          <h4 class="card-title">Mahmoud Cali</h4>
+                                          <p class="card-text">Front-End Developer</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">Mahmoud Cali</h4>
+                                          <h6 class="card-title">Roles:</h6>
+                                          <li class="card-text">Client-side development</li>
+                                          <li class="card-text">Testing and maintaining the responsive design of the application</li>
+                                          <li class="card-text">Client-side development</li>
+                                          <ul class="list-inline">
+                                              <li class="list-inline-item">
+                                                  <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                      <i class="fa fa-linkedin"></i>
+                                                  </a>
+                                              </li>
+                                              <li class="list-inline-item">
+                                                  <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                      <i class="fa fa-github"></i>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="./images/rahma-placaholder.jpeg" alt="card image"></p>
+                                          <h4 class="card-title">Rahma Abdul</h4>
+                                          <p class="card-text">Full-Stack Developer</p>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">Rahma Abdul</h4>
+                                          <h6 class="card-title">Roles:</h6>
+                                          <li class="card-text">Help with the design and development of the application</li>
+                                          <li class="card-text">Write clean code for the front and back end of the application</li>
+                                          <li class="card-text">Deal with the overlap between the front end and back end </li>
+                                          <ul class="list-inline">
+                                              <li class="list-inline-item">
+                                                  <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                      <i class="fa fa-linkedin"></i>
+                                                  </a>
+                                              </li>
+                                              <li class="list-inline-item">
+                                                  <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                      <i class="fa fa-github"></i>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+                  <!-- Team member -->
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                          <div class="mainflip">
+                              <div class="frontside">
+                                  <div class="card">
+                                      <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="./images/abdi-profile.jpg" alt="card image"></p>
+                                          <h4 class="card-title">Abdifatah Hassan</h4>
+                                          <p class="card-text">Back-End Developer</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body text-center mt-4">
+                                          <h4 class="card-title">Abdifatah Hassan</h4>
+                                          <h6 class="card-title">Roles:</h6>
+                                          <li class="card-text">Creating servers and databases for the back end of the application</li>
+                                          <li class="card-text">Collaborate with the Front-end developers to integrate user-facing elements with server side logic</li>
+                                          <li class="card-text">Build and implement data storage solutions for the application</li>
+                                          <ul class="list-inline">
+                                              <li class="list-inline-item">
+                                                  <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                      <i class="fa fa-linkedin"></i>
+                                                  </a>
+                                              </li>
+                                              <li class="list-inline-item">
+                                                  <a class="social-icon text-xs-center" target="_blank" href="#">
+                                                      <i class="fa fa-github"></i>
+                                                  </a>
+                                              </li>
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- ./Team member -->
+                  
+                 
+                  
       
-        </section>
+              </div>
+          </div>
+      </section>
+      <!-- Team -->
       
         <!-- footer -->
         <section id="footer">

@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
+    
   }
   
   #logo {
@@ -302,55 +303,132 @@
   
   /*====== testimonial =======*/
   
-  #testimonial {
-    width: 100%;
-    padding: 70px 0;
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  #team {
+      background: #eee !important;
   }
-  .testimonial-row {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  
+  .btn-primary:hover,
+  .btn-primary:focus {
+      background-color: #108d6f;
+      border-color: #108d6f;
+      box-shadow: none;
+      outline: none;
   }
-  .testimonial-col {
-    flex-basis: 28%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #00968814;
-    cursor: pointer;
-    transition: transform 0.5s;
+  
+  .btn-primary {
+      color: #fff;
+      background-color: #007b5e;
+      border-color: #007b5e;
   }
-  .testimonial-col p {
-    font-size: 14px;
+  
+  section {
+      padding: 60px 0;
   }
-  .user {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
+  
+  section .section-title {
+      text-align: center;
+      color: #007b5e;
+      margin-bottom: 50px;
+      text-transform: uppercase;
   }
-  .user img {
-    width: 40px;
-    margin-right: 20px;
-    border-radius: 3px;
+  
+  #team .card {
+      border: none;
+      background: #20c997;
   }
-  .user-info .fa {
-    margin-left: 10px;
-    color: #27c0ff;
-    font-size: 20px;
+  
+  .image-flip:hover .backside,
+  .image-flip.hover .backside {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      border-radius: .25rem;
   }
-  .user-info small {
-    color: #009688;
+  
+  .image-flip:hover .frontside,
+  .image-flip.hover .frontside {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
   }
-  .testimonial-col:hover {
-    transform: translateY(-7px);
+  
+  .mainflip {
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+      -ms-transition: 1s;
+      -moz-transition: 1s;
+      -moz-transform: perspective(1000px);
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transition: 1s;
+      transform-style: preserve-3d;
+      position: relative;
   }
-  @media screen and (max-width: 770px) {
-    .testimonial-col {
-      flex-basis: 100%;
-    }
+  
+  .frontside {
+      position: relative;
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      z-index: 2;
+      margin-bottom: 30px;
+  }
+  
+  .backside {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+      -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+      box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  }
+  
+  .frontside,
+  .backside {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1s;
+      -o-transform-style: preserve-3d;
+      -ms-transition: 1s;
+      -ms-transform-style: preserve-3d;
+      transition: 1s;
+      transform-style: preserve-3d;
+  }
+  
+  .frontside .card,
+  .backside .card {
+      min-height: 312px;
+  }
+  
+  .backside .card a {
+      font-size: 18px;
+      color: #007b5e !important;
+  }
+  
+  .frontside .card .card-title,
+  .backside .card .card-title {
+      color: #007b5e !important;
+  }
+  
+  .frontside .card .card-body img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
   }
   
   /* footer */

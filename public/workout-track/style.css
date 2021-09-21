@@ -13,6 +13,7 @@ body,
 }
 
 body {
+  background-color: #009688;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -424,6 +425,7 @@ form > button {
 
 .prev-workout {
   text-align: center;
+  
 }
 
 .prev-workout .buttons {
@@ -445,12 +447,24 @@ form > button {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  background-color: #009688
+}
+
+.buttons .ui.button:first-child:hover{
+  background-color: darkgray;
+  color: black;
 }
 
 .buttons .ui.button:nth-child(2) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
+  background-color: #009688
+}
+
+.buttons .ui.button:nth-child(2):hover{
+  background-color: darkgray;
+  color: black;
 }
 
 .workout-type,
