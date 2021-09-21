@@ -20,6 +20,14 @@ const sessionConfig = {
     })
 
 }
+
+//date-fns
+const formatDate = (date, formatStyle, locale) => {
+    return format(date, formatStyle, {
+      locale: getLocale(locale),
+    })
+  }
+
 // set middleware
 app.use(express.json());
 //urlencoded returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option.
