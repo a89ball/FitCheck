@@ -1,47 +1,51 @@
-// require packages
-const express = require('express');
-const exphbs = require('express-handlebars');
 const path = require('path');
+const express = require('express');
 const session = require('express-session');
-
-// initiate
+const exphbs = require('express-handlebars');
+const routes = require('./routes');
+const sequelize = require('./config/connection');
+const hbs = require('hbs');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
-const PORT = process.env.PORT || 3000;
-const sequelize = require('./config/db');
-const SequelizeStore = require('connect-session-sequelize')(session.Store)
-
-const sessionConfig = { 
-    secret: 'super secret',
-    cookie: {},
-    resave: false,
+const PORT = process.env.PORT || 3001;
+const sess = {
+    secret: 'super super super secret thing',
+    cookie: {
+        // Session will automatically expire in 10 minutes
+        expires: 100 * 60 * 1000
+    },
+    resave: true,
+    rolling: true,
     saveUninitialized: true,
     store: new SequelizeStore({
         db: sequelize
-    })
-
-}
-// set middleware
+    }),
+};
+app.use(session(sess));
+app.set('view engine', 'hbs');
+app.engine('hbs', exphbs({
+    extname: 'hbs',
+    defaultLayout: 'home',
+    layoutsDir: __dirname + '/views/layouts',
+    partialDir: __dirname + '/views/partial',
+    //cardioDir: __dirname + '/views/cardio'
+}))
 app.use(express.json());
-//urlencoded returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option.
-app.use(express.urlencoded({ extended: false }));
-// static ets file extension fallbacks
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(__dirname + '/public'));
+app.use(session({
+    secret: 'LONG_RANDOM_STRING_HERE',
+    resave: true,
+    saveUninitialized: true
+}));
+app.get('/', (req, res) => { res.render("main") });
+app.get('/login', (req, res) => { res.render("login") });
+app.get('/signup', (req, res) => { res.render("signup") });
+app.get('/aboutUs', (req, res) => { res.render("aboutUs") });
+app.get('/dashboard', (req, res) => { res.render("dashboard") });
 
-app.use(session(sessionConfig))
+app.use = (routes);
 
-
-// set handlebars
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
-
-// map routers
-//app.use('/dashboard', require('./routes/dashboard'));
-//app.use('/', require('./routes/html'));
-
-// connect server
-app.listen(PORT, function () {
-    console.log('Server up and running', PORT);
-    sequelize.sync({
-        force: false
-    })
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => console.log('Now listening to port" 3001'));
 });
