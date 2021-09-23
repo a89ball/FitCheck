@@ -60,4 +60,4 @@ User.init({
         sequelize, modelName: 'User'
 
     })
-    module.exports = User
+module.exports = User
