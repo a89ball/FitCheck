@@ -1,5 +1,5 @@
 .background {
-  background-image: url(https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8cmVzaXN0YW5jZSUyMGJhbmRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-image: url(../images/home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -38,7 +38,14 @@ h5 {
   padding-bottom: 10px;
   margin-left: 200px;
   margin-right: 200px;
+  background-color: rgb(240, 127, 255)
 }
+
+
+.signup {
+  background-color: rgba(240, 127, 205, 255);
+}
+
 
 img {
   height: 750px;
@@ -60,7 +67,7 @@ nav {
   font-size: 35px;
   text-decoration: underline;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: lightslategray;
+  background-color: rgb(90, 231, 231);
 }
 
 .carousel-caption {
@@ -289,11 +296,16 @@ h3 {
   transform: scale(2.0);
   -ms-transform: scale(2.0);
   -webkit-transform: scale(2.0);
-  color: orange;
-  background: -webkit-linear-gradient(45deg, rgb(247, 167, 48), rgb(236, 100, 9));
+  color: aquamarine ;
+  background: -webkit-linear-gradient(45deg, rgb(9, 236, 141), rgb(9, 236, 141));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
+}
+
+.carousel-caption {
+  color: black;
+  background-color: rgb(240, 127, 255)
 }
 
 @media screen and (max-width: 1000px) {
