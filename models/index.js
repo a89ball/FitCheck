@@ -1,5 +1,5 @@
 const User = require('./user')
-const Workout = require ('./workout')
+const WorkoutRoute = require ('./workout')
 
 User.hasMany(Workout,{
     foreignKey: userId,
