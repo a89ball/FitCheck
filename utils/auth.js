@@ -1,4 +1,4 @@
-const  authMiddleware = (req, res, next)=>{
+const  withAuth = (req, res, next)=>{
     if (!req.session.userId) {
         res.redirect('/login')
     }
@@ -7,4 +7,4 @@ const  authMiddleware = (req, res, next)=>{
     }
 }
 
-module.exports = authMiddleware;
+module.exports = withAuth;
