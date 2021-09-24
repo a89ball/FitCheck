@@ -7,6 +7,10 @@
 - [Screenshots](#screenshots)
 - [Contact](#contact)
 
+OUR AIM:
+
+At FitCheck, we aspire to provide an easy-to-use web application for a commuinuty of people that love fitness or are willing to join it! We want to create a space where people feel motivated and encouraged to maintain their journey towards a healthier stronger lifestyle.
+
 # Description
 An application that allows users to create and log new workout plans and view previous workout logs.
 The user is presented with options tp log multiple workouts and recieve back a personalised dashboard.
