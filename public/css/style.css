@@ -525,6 +525,21 @@ body{
   border-bottom: 2px solid rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
+
+.sign-up-button {
+    width: 100px;
+    cursor: pointer;
+    height: 30px;
+    font-size: 16px;
+}
+
+.login-up-button {
+  width: 100px;
+  cursor: pointer;
+  height: 30px;
+  font-size: 16px;
+}
+
 .form-content .input-box input:focus,
 .form-content .input-box input:valid{
   border-color: #7d2ae8;
