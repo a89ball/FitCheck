@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { User } = require('../../models/user');
 
 router.post('/', async (req, res) => {
-  try {
+console.log(req.body)
+    try {
     const userData = await User.create(req.body);
 
     req.session.save(() => {

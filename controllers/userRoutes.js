@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const { User } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { HostNotFoundError } = require('sequelize/types');
+const { User } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.post('/signup', (req, res) => {
     User.create({
@@ -100,3 +101,5 @@ router.delete('/:id', withAuth, (req, res) => {
 });
 
 module.exports = router;
+
+

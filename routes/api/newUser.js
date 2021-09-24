@@ -1,12 +1,12 @@
 const router = require('express').Router();
 //const user = require('/models/user')
-router.get('/', async(req, res) => {
+router.get('/', async (req, res) => {
     try {
         const projectData = await Project.findAll({
             include: [{
                 model: User,
                 attributes: ['user'],
-            }, ],
+            },],
         });
 
         const projects = projectData.map((project) => project.get({ plain: true }));
@@ -19,13 +19,13 @@ router.get('/', async(req, res) => {
     }
 });
 
-router.get('signup', async(req, res) => {
+router.get('signup', async (req, res) => {
     try {
         const projectData = await Project.findByPk(req.params.id, {
             include: [{
                 model: User,
                 attributes: ['user'],
-            }, ],
+            },],
         });
 
         const project = projectData.get({ plain: true });

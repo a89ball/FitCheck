@@ -3,7 +3,9 @@ const loginFormHandler = async(event) => {
 
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
-
+    console.log(password);
+    console.log(email);
+    
   if (email && password) {
       const response = await fetch('/api/loginRoutes', { //need to change
           method: 'POST',
@@ -42,9 +44,9 @@ const signupFormHandler = async(event) => {
 };
 
 document
-  .querySelector('.login-form')
+  .querySelector('#login')
   .addEventListener('submit', loginFormHandler);
 
 document
-  .querySelector('.signup-form')
+  .querySelector('#signup')
   .addEventListener('submit', signupFormHandler);

@@ -1,9 +1,18 @@
 const User = require('./user')
-const WorkoutRoute = require ('./workout')
+const Workout = require ('./workout')
+const Exercise = require('./exercise')
+
 
 User.hasMany(Workout,{
-    foreignKey: userId,
+    foreignKey: 'workoutId',
     onDelete: 'CASCADE',
 })
 
-module.exports = {User, Workout}
+Workout.hasMany(Exercise,{
+    foreignKey: 'exerciseId',
+    
+})
+
+
+
+module.exports = {User, Workout, Exercise}
