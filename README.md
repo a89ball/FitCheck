@@ -16,6 +16,7 @@ An application that allows users to create and log new workout plans and view pr
 The user is presented with options tp log multiple workouts and recieve back a personalised dashboard.
 
 # User Story
+ - When it comes to fitness, especially in this day and age where it’s easy to get distracted, following your fitness goals isn’t the easiest thing in the world, this is why our app allows you to keep on top of your progress while offering some motivational quotes as well as other exciting additions that will boost your confidence while you work out.
 
 
 # Installation
