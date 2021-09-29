@@ -9,7 +9,7 @@
 
 OUR AIM:
 
-At FitCheck, we aspire to provide an easy-to-use web application for a commuinuty of people that love fitness or are willing to join it! We want to create a space where people feel motivated and encouraged to maintain their journey towards a healthier stronger lifestyle.
+At BeFit, we aspire to provide an easy-to-use web application for a commuinuty of people that love fitness or are willing to join it! We want to create a space where people feel motivated and encouraged to maintain their journey towards a healthier stronger lifestyle.
 
 # Description
 An application that allows users to create and log new workout plans and view previous workout logs.
@@ -36,4 +36,8 @@ Deployed LInk
 Repository Link
 
 # Screenshots
+![image](https://user-images.githubusercontent.com/82878278/135284775-af1b63aa-a62c-48d4-b903-77caf6143634.png)
+![image (1)](https://user-images.githubusercontent.com/82878278/135284833-fe6bf01a-806e-44d0-a3be-64cd9d0b3ae9.png)
+![image (2)](https://user-images.githubusercontent.com/82878278/135284855-3a3a4357-ac11-4c2d-ace4-59073c75e418.png)
+
 
