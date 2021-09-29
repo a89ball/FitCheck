@@ -36,10 +36,21 @@ Deployed LInk
 Repository Link
 
 # Screenshots
+
+- Screenshot of the Apps Homepage
 ![image](https://user-images.githubusercontent.com/82878278/135284775-af1b63aa-a62c-48d4-b903-77caf6143634.png)
+
+- Screenshot of the Log-in page for members 
 ![image (1)](https://user-images.githubusercontent.com/82878278/135284833-fe6bf01a-806e-44d0-a3be-64cd9d0b3ae9.png)
+
+- Screenshpt pf the Sign-up page
 ![image (2)](https://user-images.githubusercontent.com/82878278/135284855-3a3a4357-ac11-4c2d-ace4-59073c75e418.png)
+
+- Screenshot of the Team section 
 ![image (3)](https://user-images.githubusercontent.com/82878278/135285306-95cd0961-f71e-4702-a590-10d7b9aae614.png)
+
+
+![image (4)](https://user-images.githubusercontent.com/82878278/135285564-d0b9f0c0-7ced-4aed-bd64-f1634ce3aa1c.png)
 
 
 
